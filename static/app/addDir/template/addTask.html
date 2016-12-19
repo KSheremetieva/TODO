@@ -1,0 +1,21 @@
+<div class="row">
+<div class="col-xs-6">
+<div class="form-group">
+  <label for="usr">Task:</label>
+  <input type="text" class="form-control" id="usr" ng-model="newTask">
+</div>
+</div>
+<div class="col-xs-4">
+<div class="form-group">
+  <label for="usr">Category:</label>
+  <select class="form-control" ng-options="item.name for item in categories" ng-model="selected"></select>
+</div>
+</div>
+<div class="col-xs-2">
+      <button class="btn btn-success" type="submit" ng-click="addTask(newTask, selected.name)" style="margin-top: 24px;">
+        <i class="glyphicon glyphicon-plus"></i>
+      </button>
+    </div>
+</div>
+
+<br>
